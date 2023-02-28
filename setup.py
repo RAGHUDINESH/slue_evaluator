@@ -1,8 +1,10 @@
 from distutils.core import setup
 setup(
+  include_package_data=True,
+  #package_dir={"": "slue_evaluator"},
   name = 'slue_evaluator',         # How you named your package folder (MyLib)
   packages = ['slue_evaluator'],   # Chose the same as "name"
-  version = '0.1',      # Start with a small number and increase it with every change you make
+  version = '0.7',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = "Evalutes the model's output on slue dataset",   # Give a short description about your library
   author = 'RAGHU DINESH',                   # Type in your name
@@ -29,5 +31,4 @@ setup(
     'Programming Language :: Python :: 3.10',
 
   ],
-  include_package_data=True,
 )
