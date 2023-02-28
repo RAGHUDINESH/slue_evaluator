@@ -11,8 +11,8 @@ import importlib
 
 sys.path.insert(0, "../")
 
-import slue_toolkit_eval_utils as eval_utils
-from slue_toolkit_generic_utils import (
+import slue_evaluator.utils.slue_toolkit_eval_utils as eval_utils
+from slue_evaluator.utils.slue_toolkit_generic_utils import (
     read_lst,
     save_dct,
     spl_char_to_entity,
