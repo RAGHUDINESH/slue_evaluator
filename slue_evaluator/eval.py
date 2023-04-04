@@ -110,5 +110,5 @@ def eval_ner(hypo, ref, save_as=None, eval_label="combined"):
 
 def e2e_ner_score(file, save_as=None, split="dev", label="combined"):
     with importlib.resources.path('slue_evaluator','data') as data_path:
-        ref = os.path.join(data_path, f"{split}.{label}.wrd")
+        ref = os.path.join(data_path, f"{split}.raw.wrd")
     eval_ner(file,ref,save_as,label)
